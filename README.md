@@ -19,14 +19,24 @@ Shortcut Options:
 * *width*: button width.
 * *height*: button height.
 
-Example:
+Examples:
 --------
+
+Multiple responsive buttons:
+
+```text
+[hover-image-row]
+    [hover-image-button title="Section 1" subtitle="It's and amazing section" link="http://my-section-link" image="http://my-image-link" ]
+    [hover-image-button title="Section 2" subtitle="Enter here for more info" link="http://my-section-link" image="http://my-image-link" ]
+    [hover-image-button title="Section 3" subtitle="This is the best section" link="http://my-section-link" image="http://my-image-link" ]
+[/hover-image-row]
+```
+
+Single button:
 
 ```text
 [hover-image-button title="Section 1" subtitle="It's and amazing section" link="http://my-section-link" image="http://my-image-link" ]
 ```
-
-*Note: To improve the visual result it is recommended to use a columns responsive plugin.*
 
 Usage
 -----

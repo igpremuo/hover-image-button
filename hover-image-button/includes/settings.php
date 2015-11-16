@@ -47,7 +47,7 @@ function hover_image_button_settings_init(  ) {
     // Section title.
     add_settings_section(
         'hover_image_button_pluginPage_section_color', 
-        __( 'Hover background color', HOVER_IMAGE_BUTTON_TEXT_DOMAIN ), 
+        __( 'On hover background color', 'hover-image-button' ), 
         'hover_image_button_settings_section_color_callback', 
         'pluginPage'
     );
@@ -55,7 +55,7 @@ function hover_image_button_settings_init(  ) {
     // Hover color.
     add_settings_field( 
         HOVER_IMAGE_BUTTON_COLOR, 
-        __( 'Color', HOVER_IMAGE_BUTTON_TEXT_DOMAIN ), 
+        __( 'Color', 'hover-image-button' ), 
         'hover_image_button_text_field_color_render', 
         'pluginPage', 
         'hover_image_button_pluginPage_section_color' 
@@ -64,7 +64,7 @@ function hover_image_button_settings_init(  ) {
     // Hover Opacity.
     add_settings_field( 
         HOVER_IMAGE_BUTTON_OPACITY, 
-        __( 'Opacity', HOVER_IMAGE_BUTTON_TEXT_DOMAIN ), 
+        __( 'Opacity', 'hover-image-button' ), 
         'hover_image_button_text_field_opacity_render', 
         'pluginPage', 
         'hover_image_button_pluginPage_section_color' 
@@ -77,7 +77,7 @@ function hover_image_button_settings_init(  ) {
     // Section title.
     add_settings_section(
         'hover_image_button_pluginPage_section_size', 
-        __( 'Buttons default size', HOVER_IMAGE_BUTTON_TEXT_DOMAIN ), 
+        __( 'Buttons default size', 'hover-image-button' ), 
         'hover_image_button_settings_section_size_callback', 
         'pluginPage'
     );
@@ -85,7 +85,7 @@ function hover_image_button_settings_init(  ) {
     // Width.
     add_settings_field( 
         HOVER_IMAGE_BUTTON_WIDTH, 
-        __( 'Width', HOVER_IMAGE_BUTTON_TEXT_DOMAIN ), 
+        __( 'Width', 'hover-image-button' ), 
         'hover_image_button_text_field_width_render', 
         'pluginPage', 
         'hover_image_button_pluginPage_section_size' 
@@ -94,7 +94,7 @@ function hover_image_button_settings_init(  ) {
     // Height.
     add_settings_field( 
         HOVER_IMAGE_BUTTON_HEIGHT, 
-        __( 'Height', HOVER_IMAGE_BUTTON_TEXT_DOMAIN ), 
+        __( 'Height', 'hover-image-button' ), 
         'hover_image_button_text_field_height_render', 
         'pluginPage', 
         'hover_image_button_pluginPage_section_size' 
@@ -107,7 +107,7 @@ function hover_image_button_settings_init(  ) {
     // Section title.
     add_settings_section(
         'hover_image_button_pluginPage_section_css', 
-        __( 'Custom CSS code', HOVER_IMAGE_BUTTON_TEXT_DOMAIN ), 
+        __( 'Custom CSS code', 'hover-image-button' ), 
         'hover_image_button_settings_section_css_callback', 
         'pluginPage'
     );
@@ -115,7 +115,7 @@ function hover_image_button_settings_init(  ) {
     // Custom CSS textarea.
     add_settings_field( 
         HOVER_IMAGE_BUTTON_CSS, 
-        __( 'Code', HOVER_IMAGE_BUTTON_TEXT_DOMAIN ), 
+        __( 'Code', 'hover-image-button' ), 
         'hover_image_button_textarea_field_css_render', 
         'pluginPage', 
         'hover_image_button_pluginPage_section_css' 
@@ -195,21 +195,21 @@ function hover_image_button_textarea_field_css_render() {
  * Shows the color section description.
  */
 function hover_image_button_settings_section_color_callback() { 
-    echo __( 'Select the color and the opacity when the mouse is hover the button.', HOVER_IMAGE_BUTTON_TEXT_DOMAIN );
+    echo __( 'Select the color and the opacity when the mouse is hover the button.', 'hover-image-button' );
 }
 
 /**
  * Shows the size section description.
  */
 function hover_image_button_settings_section_size_callback() { 
-    echo __( 'Change the default size of the buttons. You must indicate the unit of the size using <b>px</b> for pixels, or <b>%</b> for percentage.', HOVER_IMAGE_BUTTON_TEXT_DOMAIN );
+    echo __( 'Change the default size of the buttons. You must indicate the unit of the size using <b>px</b> for pixels, or <b>%</b> for percentage.', 'hover-image-button' );
 }
 
 /**
  * Shows the CSS section description.
  */
 function hover_image_button_settings_section_css_callback() { 
-    echo __( 'Include your own css code to customize the buttons.', HOVER_IMAGE_BUTTON_TEXT_DOMAIN);
+    echo __( 'Include your own CSS code to customize the buttons.', 'hover-image-button');
 }
 
 /**
@@ -225,7 +225,7 @@ function hover_image_button_options_page() {
         <div class="wrap">
             <h2>Hover Image Button</h2>
             <form action="options.php" method="post">
-                <p><?php _e( 'Configure the main parameters of the plugin.', HOVER_IMAGE_BUTTON_TEXT_DOMAIN ) ?></p>
+                <p><?php _e( 'Configure the main parameters of the plugin.', 'hover-image-button' ) ?></p>
                 <?php
                     settings_fields( 'pluginPage' );
                     do_settings_sections( 'pluginPage' );

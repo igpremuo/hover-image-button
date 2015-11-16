@@ -14,11 +14,6 @@
 
 defined( 'HOVER_IMAGE_BUTTON' ) or die( 'No script kiddies please!' );
 
-// Text domain variable.
-if ( ! defined('HOVER_IMAGE_BUTTON_TEXT_DOMAIN')) {
-	define( 'HOVER_IMAGE_BUTTON_TEXT_DOMAIN' , 'hover-image-button' );
-}
-
 // Settings variable.
 if ( ! defined('HOVER_IMAGE_BUTTON_SETTINGS')) {
 	define( 'HOVER_IMAGE_BUTTON_SETTINGS' , 'hover_image_button_settings' );
