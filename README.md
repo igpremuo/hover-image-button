@@ -1,5 +1,5 @@
-Hover Image Button
-==================
+Hover Image Button - WordPress Plugin
+=====================================
 
 Create mobile responsive buttons with background images and pure CSS3 animated on hover effects. Include title and subtitle that appears when the user move the mouse hover the button. Recommended to be used as a page or section links.
 
@@ -42,6 +42,8 @@ Usage
 -----
 
 Upload the *hover-image-button* folder to your */wp-content/plugins* directory.
+
+Or find it on the [official WordPress repository](https://wordpress.org/plugins/hover-image-button/).
 
 License
 -------
